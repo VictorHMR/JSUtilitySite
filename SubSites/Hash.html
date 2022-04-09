@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Press+Start+2P&display=swap"
+          rel="stylesheet"
+        />
+        <title>Hash Encoder</title>
+        <link rel="stylesheet" href="../css/Nav.css" />
+        <link rel="stylesheet" href="../css/Global.css" />
+        <link rel="stylesheet" href="../css/inputs.css" />
+        <link rel="stylesheet" href="../css/boxs.css" />
+      </head>
+<body>
+    
+    <header>
+        <nav>
+          <a class="logo" href="" style="font-size:20px;">Hash Encoder</a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a class="btn" href="../index.html">Voltar</a></li>
+          </ul>
+        </nav>
+      </header>
+
+
+
+      <main class="ConvertBox">
+        <label for="input" class="center">Digite sua Mensagem</label>
+        <textarea class="input Hash" name="input" id="input" placeholder="mensagem"></textarea>
+        <div class="buttonsBox">
+            <button class="btn btnBlue" id="BSha1">SHA1</button>
+            <button class="btn btnBlue" id="BMD5">MD5</button>
+        </div>
+        
+        <label for="input" class="center">Mensagem Criptografada</label>
+        <textarea disabled class="input Hash" name="output" id="output"></textarea>
+
+      </main>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+      <script src="http://www.myersdaily.org/joseph/javascript/md5.js"></script>
+      <script type="text/javascript" src="../js/Jquery.min.js"></script>
+      <script src="../js/responsividade.js"></script>
+      <script src="../js/encode.js"></script>
+</body>
+</html>
