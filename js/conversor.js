@@ -3,7 +3,7 @@ var Bin;
 var Hex;
 var Oct;
 var Asc;
-$(".RadioButton").on("click", function (event) {
+$(".RadioButton").on("click", (event)=>{
   event = event.target.id;
   if (event == "dec") {
     $("#dec").prop("checked", true);
@@ -87,7 +87,7 @@ $(".RadioButton").on("click", function (event) {
   }
 });
 
-$(".input").on("keyup", function (event) {
+$(".input").on("keyup", (event)=> {
   switch (event.target.id) {
     case "numDec":
       Dec = parseInt($("#numDec").val());

@@ -31,6 +31,7 @@
   position:sticky;
   text-decoration: none;
   resize: none;
+  font-weight: bold;
 }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
